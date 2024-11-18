@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import "./style/style.scss"
+import { Route, Routes } from 'react-router-dom'
+import RandomPokemon from './components/randompokemon/RandomPokemon';
+import SearchByNumber from './components/SearchByNumber/SearchByNumber';
+import CharacterSearch from './components/charactersearch/charactersearch';
+// import { useRoutes } from 'react-router-dom';
+import Layout from './components/layout/layout';
+// import axios from "axios"
+// import { useEffect, useState } from 'react';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+return (
+  <div className='page_wrapper'>
+    <Routes>
+      <Route path="/" element={<Layout/>}>
+        <Route path="randompokemon" element={<RandomPokemon/>}/>
+        <Route path="searchbynumber" element={<SearchByNumber/>}/>
+        <Route path="charactersearch" element={<CharacterSearch/>}/>
+      </Route>
+    </Routes>
+  </div>
   );
 }
 
 export default App;
+
