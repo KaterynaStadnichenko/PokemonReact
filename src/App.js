@@ -6,6 +6,7 @@ import SearchByNumber from './components/SearchByNumber/SearchByNumber';
 import CharacterSearch from './components/charactersearch/charactersearch';
 // import { useRoutes } from 'react-router-dom';
 import Layout from './components/layout/layout';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 // import axios from "axios"
 // import { useEffect, useState } from 'react';
 
