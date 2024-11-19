@@ -4,7 +4,7 @@ import logo from "./pok_logo.webp"
 import { useState } from "react";
 import Input from "../Input/Input";
 
-console.log(logo)
+
 const Header = () => {
     const [inputValue, setInputValue] = useState('');
     const [route, setRoute] = useState(1); // Default route is 1
