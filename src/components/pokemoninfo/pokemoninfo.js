@@ -1,5 +1,4 @@
 const PokemonInfo = ({ data }) => {
-    console.log(data);
     return (
         <div>
             {!data ? (
