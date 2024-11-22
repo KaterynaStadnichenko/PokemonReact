@@ -31,7 +31,6 @@ const Header = () => {
                 </div>
             </div>
             </div>
-            <Input route={route} />
         </div>
         
         
