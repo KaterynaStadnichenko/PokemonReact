@@ -1,23 +1,40 @@
 import { useState } from "react";
 import Input from "../Input/Input";
-import getPokemonByNumber from "../../api/getPokemonByNumber";
+import axios from "axios";
+import PokemonInfo from "../PokemonInfo/PokemonInfo"
+//import getPokemonByNumber from "../../api/getPokemonByNumber";
 
 export default function SearchByNumber() {
 
-    const [pokemonNumber, setPokemonNumber] = useState("iflsfjeil")
-    const onChangeValue = event => {
-        setPokemonNumber(event.target.value)
-    } 
+    const [pokemonNumber, setPokemonNumber] = useState("iflsfjeil");
+    const [pokemonInfoData, setPokemonInfoData] = useState(null);
+    const [loading, setLoading] = useState(false);
 
-    const fubnction = () => {
-        getPokemonByNumber(pokemonNumber)
+    const getPokemonByNumber = (pokemonNumber) => {
+        setLoading(true)
+
+        const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+
+        axios.get(`${baseURL}/${pokemonNumber}`).then((response) => {
+            setPokemonInfoData(response.data);
+            setLoading(false)
+        });
     }
 
-    return(     
+    const onChangeValue = event => {
+        setPokemonNumber(event.target.value)
+    }
+
+    const fubnction = () => {
+        getPokemonByNumber(pokemonNumber);
+    }
+
+    return (
         <div>
-            <Input onSearch={fubnction} onChangeValue={onChangeValue} placeholder= "Enter pokemon number from 1 to 1025" label="Only numbers are accepted"></Input>
+            <Input onSearch={fubnction} onChangeValue={onChangeValue} placeholder="Enter pokemon number from 1 to 1025" label="Only numbers are accepted"></Input>
+            <PokemonInfo data={pokemonInfoData} />
         </div>
     )
-    
+
 }
 

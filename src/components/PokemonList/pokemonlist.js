@@ -1,7 +1,7 @@
 import PokemonCard from "./pokemoncard"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import PokemonInfo from "../pokemoninfo/pokemoninfo"
+import PokemonInfo from "../PokemonInfo/PokemonInfo"
 
 const PokemonList = () => {
 
