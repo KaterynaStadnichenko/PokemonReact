@@ -3,9 +3,7 @@
     padding: 0;
     font-size: 15px;
 }
-.page_wrapper {
-   background-color: rgba(246, 230, 82, 1);
-}
+
 .container {
     max-width: 1170px;
     width: 100%;
@@ -63,8 +61,8 @@
 
 .input_wrapper {
     margin: 0 auto;
-    margin-top: 250px;
-    margin-bottom: 250px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
 .input_div {
     max-width: 510px;
@@ -77,7 +75,7 @@
     text-align: center;
     display: block;
     padding-bottom: 20px;
-    color: rgb(77, 87, 225);
+    color: rgb(239, 255, 60);
     text-transform: uppercase;
 }
 .button {
@@ -214,4 +212,49 @@
 .base-stat_text{
     text-transform: uppercase;
     padding: 10px;
+}
+.home_page_wrapper {
+    background-image: url("../pikachu_background.png");
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+ 
+ }
+ .home_page_text {
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    font-weight: 800;
+    max-width: 300px;
+    width: 100%;
+    
+ }
+ .home_page_nav_buttons {
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+    padding-bottom: 75px;
+ }
+.home_page_button {
+    padding: 12px;
+    background-color: rgb(77, 115, 175);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(236, 236, 119);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        color: rgb(77, 115, 175);
+        background-color: rgb(236, 236, 119);
+    }
+}
+.home_page_p{
+    color: rgb(8, 71, 173);
+}
+.poke_list_wrapper {
+    padding-top: 100px;
+    background-color: rgb(231, 231, 107);
+}
+.search_by_number_wrapper {
+   background-color: rgb(111, 111, 222);
 }

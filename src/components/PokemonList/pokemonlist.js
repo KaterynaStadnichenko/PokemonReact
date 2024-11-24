@@ -1,7 +1,7 @@
 import PokemonCard from "./pokemoncard"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import PokemonInfo from "../pokemoninfo/pokemoninfo"
+import PokemonInfo from "../PokemonInfo/PokemonInfo"
 
 const PokemonList = () => {
 
@@ -28,7 +28,7 @@ const PokemonList = () => {
     }, [])
 
     return (
-        <div>
+        <div className="poke_list_wrapper">
             <div className="poke_grid_container">
                 <PokemonCard pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
             </div>

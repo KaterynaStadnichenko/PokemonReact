@@ -38,4 +38,3 @@ const PokemonInfo = ({ data }) => {
     );
   };
   export default PokemonInfo;
-  

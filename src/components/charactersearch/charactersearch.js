@@ -4,15 +4,16 @@ import getPokemonByName from "../../api/getPokemonByName";
 
 export default function CharacterSearch(){
     const [pokemonName, setPokemonName ] = useState("")
-    // const [pokemonInfo, setPokemonInfo] = useState(null)
+    const [pokemonInfo, setPokemonInfo] = useState(null)
     
-
+    
     const onChangeValue = event => {
         setPokemonName(event.target.value)
     } 
 
     const onSearch = () => {
         getPokemonByName(pokemonName)
+
     }
 
     return(

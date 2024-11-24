@@ -3,8 +3,11 @@ import axios from "axios";
 const PokemonCard = ({ pokemon, loading, infoPokemon }) => {
 
     const getPokemon = async (url) => {
-        const res = await axios.get(url);
-        infoPokemon(res.data);
+        if (infoPokemon) {
+            const res = await axios.get(url);
+            infoPokemon(res.data);
+        }
+
     }
     return (
         <div className="poke_grid">
