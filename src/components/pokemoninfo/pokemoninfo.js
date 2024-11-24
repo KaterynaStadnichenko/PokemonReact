@@ -1,4 +1,4 @@
-const PokemonInfo = ({ data }) => {
+export default function PokemonInfo({ data }) {
     return (
         <div>
             {!data ? (
@@ -37,4 +37,8 @@ const PokemonInfo = ({ data }) => {
         </div>
     );
   };
+<<<<<<< HEAD
   export default PokemonInfo;
+=======
+  
+>>>>>>> 1092e324f8cef65af06b56047fdda8240f2c9e1b

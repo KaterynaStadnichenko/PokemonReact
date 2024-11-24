@@ -30,10 +30,19 @@ export default function SearchByNumber() {
     }
 
     return (
+<<<<<<< HEAD
         <div className="search_by_number_wrapper">
+=======
+        <div>
+>>>>>>> 1092e324f8cef65af06b56047fdda8240f2c9e1b
             <Input onSearch={fubnction} onChangeValue={onChangeValue} placeholder="Enter pokemon number from 1 to 1025" label="Only numbers are accepted"></Input>
             <PokemonInfo data={pokemonInfoData} />
         </div>
     )
+<<<<<<< HEAD
+=======
+
+}
+>>>>>>> 1092e324f8cef65af06b56047fdda8240f2c9e1b
 
 }
