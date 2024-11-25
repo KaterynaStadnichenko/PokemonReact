@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../Input/Input";
 import axios from "axios";
-import PokemonInfo from "../PokemonInfo/PokemonInfo";
+import PokemonInfo from "../pokemoninfo/pokemoninfo";
 
 
 export default function SearchByNumber() {
@@ -47,7 +47,6 @@ export default function SearchByNumber() {
             />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
-            {/* <PokemonInfo data={pokemonInfoData} /> */}
             <PokemonInfo data={pokemonInfoData} />
         </div>
     );
