@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../Input/Input";
 import axios from "axios";
-import PokemonInfo from "../PokemonInfo/PokemonInfo"
+import PokemonInfo from "../PokemonInfo/PokemonInfo";
 
 export default function SearchByNumber() {
 
