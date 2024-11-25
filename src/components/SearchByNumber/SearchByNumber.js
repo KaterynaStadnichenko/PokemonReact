@@ -5,7 +5,7 @@ import PokemonInfo from "../PokemonInfo/PokemonInfo";
 
 export default function SearchByNumber() {
 
-    const [pokemonNumber, setPokemonNumber] = useState("iflsfjeil");
+    const [pokemonNumber, setPokemonNumber] = useState("");
     const [pokemonInfoData, setPokemonInfoData] = useState(null);
     const [loading, setLoading] = useState(false);
 
