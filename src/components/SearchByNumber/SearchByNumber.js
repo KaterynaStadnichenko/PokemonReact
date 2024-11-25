@@ -12,7 +12,7 @@ export default function SearchByNumber() {
 
     const getPokemonByNumber = (pokemonNumber) => {
         setLoading(true);
-        setError(null); // Clear any previous errors
+        setError(null);
 
         const baseURL = "https://pokeapi.co/api/v2/pokemon/";
 
