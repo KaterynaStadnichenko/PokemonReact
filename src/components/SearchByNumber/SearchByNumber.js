@@ -3,6 +3,7 @@ import Input from "../Input/Input";
 import axios from "axios";
 import PokemonInfo from "../PokemonInfo/PokemonInfo";
 
+
 export default function SearchByNumber() {
     const [pokemonNumber, setPokemonNumber] = useState("");
     const [pokemonInfoData, setPokemonInfoData] = useState(null);
@@ -46,6 +47,7 @@ export default function SearchByNumber() {
             />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
+            {/* <PokemonInfo data={pokemonInfoData} /> */}
             <PokemonInfo data={pokemonInfoData} />
         </div>
     );
