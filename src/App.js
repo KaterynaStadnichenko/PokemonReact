@@ -2,7 +2,6 @@ import './App.css';
 import "./style/style.scss"
 import { Route, Routes } from 'react-router-dom'
 import SearchByNumber from './components/SearchByNumber/SearchByNumber';
-import CharacterSearch from './components/charactersearch/charactersearch';
 import Layout from './components/layout/layout';
 import PokemonList from './components/PokemonList/pokemonlist';
 import HomePage from './components/HomePage/HomePage';
@@ -16,7 +15,6 @@ return (
         <Route path="home" element={<HomePage/>}/>
         <Route path="pokemonlist" element={<PokemonList/>}/>
         <Route path="searchbynumber" element={<SearchByNumber/>}/>
-        <Route path="charactersearch" element={<CharacterSearch/>}/>
       </Route>
     </Routes>
   </div>
