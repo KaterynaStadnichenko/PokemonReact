@@ -15,20 +15,18 @@ const Header = () => {
  
     return(
         <div>
-            
-        <div className="header">
-            <div className="container">
-                <div className='header_wrapper'>   
-                    <a href="#" className="logo"><img src={logo} alt="Logo" className="header_logo"/></a>
-                        <div className="header_nav">
-                            <Link to={"home"} className="header_anc" onClick={() => handleRouteChange(0)}> HOME</Link>
-                            <Link to={"pokemonlist"} className="header_anc" onClick={() => handleRouteChange(1)}> POKEMON LIST</Link>
-                            <Link to={"searchbynumber"} className="header_anc" onClick={() => handleRouteChange(2)}> SEARCH BY NUMBER</Link>
-                        </div>
+            <div className="header">
+                <div className="container">
+                    <div className='header_wrapper'>   
+                        <a href="#" className="logo"><img src={logo} alt="Logo" className="header_logo"/></a>
+                            <div className="header_nav">
+                                <Link to={""} className="header_anc" onClick={() => handleRouteChange(0)}> HOME</Link>
+                                <Link to={"pokemonlist"} className="header_anc" onClick={() => handleRouteChange(1)}> POKEMON LIST</Link>
+                                <Link to={"searchbynumber"} className="header_anc" onClick={() => handleRouteChange(2)}> SEARCH BY NUMBER</Link>
+                            </div>
+                    </div>
                 </div>
             </div>
-        </div>
-            <HomePage />
         </div>
     )
 }
