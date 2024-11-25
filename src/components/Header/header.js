@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from "./pok_logo.webp"
 import { useState } from "react";
+import HomePage from "../HomePage/HomePage";
 
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
  
     return(
         <div>
+            
         <div className="header">
             <div className="container">
                 <div className='header_wrapper'>   
@@ -27,6 +29,7 @@ const Header = () => {
                 </div>
             </div>
             </div>
+            <HomePage />
         </div>
         
         
