@@ -2,7 +2,6 @@ import { useState } from "react";
 import Input from "../Input/Input";
 import axios from "axios";
 import PokemonInfo from "../PokemonInfo/PokemonInfo"
-//import getPokemonByNumber from "../../api/getPokemonByNumber";
 
 export default function SearchByNumber() {
 
@@ -34,6 +33,4 @@ export default function SearchByNumber() {
             <Input onSearch={fubnction} onChangeValue={onChangeValue} placeholder="Enter pokemon number from 1 to 1025" label="Only numbers are accepted"></Input>
             <PokemonInfo data={pokemonInfoData} />
         </div>
-    )
-
-}
+    )};
