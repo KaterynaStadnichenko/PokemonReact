@@ -42,8 +42,8 @@ export default function SearchByNumber() {
             <Input
                 onSearch={handleSearch}
                 onChangeValue={onChangeValue}
-                placeholder="Enter pokemon number from 1 to 1025"
-                label="Only numbers are accepted"
+                placeholder="Enter pokemon number or name"
+                label="Only numbers or small letters are accepted"
             />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
