@@ -23,12 +23,22 @@
     width: 100%;
     cursor: pointer;
 }
+@media screen and (max-width: 568px) {
+    .header_logo {
+        margin: 0 auto;
+    }
+}
 .header_nav {
     max-width: 550px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: rgb(236, 236, 119);
+}
+@media screen and (max-width: 568px) {
+    .header_nav {
+        display: none;
+    }
 }
 .header_anc {
     cursor: pointer;
@@ -47,7 +57,6 @@
     height: 40px;
     border-width: 2px;
     border-color: rgb(77, 87, 225);
-    
     border-radius: 3px;
     border-style: solid;
     
@@ -64,12 +73,27 @@
     padding-top: 300px;
     padding-bottom: 300px;
 }
+@media screen and (max-width: 568px) {
+    .input_wrapper {
+        margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 50px;
+    }
+}
 .input_div {
     max-width: 510px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 568px) {
+    .input_div {
+        display: block;
+        text-align: center;
+        max-width: 300px;
+    }
 }
 .label {
     text-align: center;
@@ -86,6 +110,7 @@
         color: rgb(77, 87, 225);
     }
 }
+
 .button_div {
     
     background-color:  rgb(77, 87, 225);
@@ -98,6 +123,11 @@
         background-color: rgb(236, 236, 119);
     }
    
+}
+@media screen and (max-width: 568px) {
+    .button_div {
+        margin-top: 20px;
+    }
 }
 .poke_card {
     background-color: rgb(77, 87, 225, 0.75);
@@ -134,6 +164,23 @@
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .poke_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .poke_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 20px;
+        max-width: 334px;
+        width: 100%;
+    }
 }
 .pokemon_search {
    max-width: 700px;
@@ -175,14 +222,19 @@
     padding-top: 50px;
     padding-bottom: 30px;
 }
+@media screen and (max-width: 568px) {
+    .prev_next_div {
+        max-width: 350px;
+    }
+}
 .pokeInfo_div {
     background-color: rgb(61, 67, 111);
     margin: 0 auto;
     margin-top: 50px;
     color: rgb(236, 236, 119);
     text-align: center;
-    
 }
+
 .pokeInfo_text {
     padding: 10px;
 }
@@ -196,19 +248,50 @@
   height: 500px;
   width: 500px;
 }
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .pokeInfo_img_wrapper {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .pokeInfo_img_wrapper {
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+    }
+}
 .pokemon_abilities_text {
     background-color: rgb(236, 134, 119);
     color: rgb(77, 87, 225);
     padding: 5px;
     text-transform: uppercase;
     max-width: 200px;
-  
     width: 100%;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .pokemon_abilities_text {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .pokemon_abilities_text {
+        margin: 0 auto;
+    }
 }
 .pokeInfo_wrapper{
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .pokeInfo_wrapper {
+        display: block;
+    }
+}
+@media screen and (max-width: 568px) {
+    .pokeInfo_wrapper {
+        display: block;
+    }
 }
 .base-stat{
     padding: 10px;
@@ -217,27 +300,59 @@
     text-transform: uppercase;
     padding: 10px;
 }
+.home_page_content {
+    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-left: 15px;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_content {
+        padding-top: 0;
+    }
+}
 .home_page_wrapper {
     background-image: url("./pikachu_background.webp");
     background-size: 100%; 
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat; 
- 
+    background-color: rgba(224, 191, 62, 1);
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_wrapper {
+        background-image: none;
+    }
+ }
+ @media screen and (max-width: 568px) {
+    .home_page_wrapper {
+        background-image: none;
+    }
  }
  .home_page_text {
-    padding-left: 15px;
-    padding-top: 100px;
     padding-bottom: 300px;
     font-weight: 800;
     max-width: 300px;
     width: 100%;
-    
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_text {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_text_wrapper {
+        padding-top: 40px;
+    }
  }
  .home_page_nav_buttons {
     display: flex;
     max-width: 400px;
     justify-content: space-between;
-    padding-bottom: 75px;
+ }
+ @media screen and (max-width: 568px) {
+    .home_page_nav_buttons {
+        max-width: 300px; 
+    }
  }
 .home_page_button {
     padding: 12px;
@@ -263,6 +378,11 @@
     background-position: top;
     background-repeat: no-repeat;
     background-color: rgba(239, 172, 223, 1);
+}
+@media screen and (max-width: 568px) {
+    .poke_list_wrapper {
+        background-image: none;
+    }
 }
 .search_by_number_wrapper {
    background-image: url("./whater_pokemon.webp");

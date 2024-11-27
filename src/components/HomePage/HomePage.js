@@ -5,10 +5,12 @@ const HomePage = () => {
     return(
         <div className="home_page_wrapper ">
             <div className="container">
-                <div>
-                    <div className="home_page_text">
+                <div className="home_page_content">
+                    <div className="home_page_text_wrapper">
+                        <div className="home_page_text">
                         <p className="home_page_p">HELLO, THIS PAGE IS DEDICATED TO THE POKEMON SEARCH AND THEIR ABILITIES</p>
                         <p className="home_page_p">TO START THE PROCESS PLEASE PRESS ANY BUTTON BELOW AND SCROLL DOWN</p>
+                        </div>
                     </div>
                     <div className="home_page_nav_buttons">
                         <Link to="/pokemonlist" className="home_page_button">Pokemon List</Link>

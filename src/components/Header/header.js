@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom"
 import logo from "./pok_logo.webp"
 import { useState } from "react";
-import HomePage from "../HomePage/HomePage";
 
 
 const Header = () => {
-    const [inputValue, setInputValue] = useState('');
+    // const [inputValue, setInputValue] = useState('');
     const [route, setRoute] = useState(0);
   
   
@@ -18,7 +17,7 @@ const Header = () => {
             <div className="header">
                 <div className="container">
                     <div className='header_wrapper'>   
-                        <a href="#" className="logo"><img src={logo} alt="Logo" className="header_logo"/></a>
+                        <a href="" className="logo"><img src={logo} alt="Logo" className="header_logo"/></a>
                             <div className="header_nav">
                                 <Link to={""} className="header_anc" onClick={() => handleRouteChange(0)}> HOME</Link>
                                 <Link to={"pokemonlist"} className="header_anc" onClick={() => handleRouteChange(1)}> POKEMON LIST</Link>
