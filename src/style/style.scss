@@ -339,6 +339,11 @@
         padding-top: 100px;
     }
  }
+ @media screen and (max-width: 568px) {
+    .home_page_text {
+        margin: 0 auto;
+    }
+ }
  @media screen and (max-width: 1200px) and (min-width: 569px) {
     .home_page_text_wrapper {
         padding-top: 40px;
@@ -352,6 +357,7 @@
  @media screen and (max-width: 568px) {
     .home_page_nav_buttons {
         max-width: 300px; 
+        margin: 0 auto;
     }
  }
 .home_page_button {
