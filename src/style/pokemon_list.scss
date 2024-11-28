@@ -1,0 +1,50 @@
+.poke_list_wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("./espeon_back.webp");
+    background-size: 100%; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(239, 172, 223, 1);
+}
+@media screen and (max-width: 568px) {
+    .poke_list_wrapper {
+        background-image: none;
+    }
+}
+.prev_next_div {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 568px) {
+    .prev_next_div {
+        max-width: 350px;
+    }
+}
+.prev_button {
+    background-color: rgb(77, 87, 225);
+    padding: 10px;
+    border: 2px solid rgb(77, 87, 225);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(55, 62, 158, 0.90);
+    }
+}
+.next_button {
+    background-color: rgb(77, 87, 225);
+    padding: 10px;
+    border: 2px solid rgb(77, 87, 225);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(55, 62, 158, 0.90);
+    }
+}

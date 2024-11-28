@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from "./pok_logo.webp"
 import { useState } from "react";
+import "../../style/header.scss"
 
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
             <div className="header">
                 <div className="container">
                     <div className='header_wrapper'>   
-                        <a href="" className="logo"><img src={logo} alt="Logo" className="header_logo"/></a>
+                        <img src={logo} alt="Logo" className="header_logo"/>
                             <div className="header_nav">
                                 <Link to={""} className="header_anc" onClick={() => handleRouteChange(0)}> HOME</Link>
                                 <Link to={"pokemonlist"} className="header_anc" onClick={() => handleRouteChange(1)}> POKEMON LIST</Link>

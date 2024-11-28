@@ -1,3 +1,5 @@
+import "../../style/pokemon_info.scss"
+
 export default function PokemonInfo({ data }) {
     return (
         <div>

@@ -1,0 +1,72 @@
+.pokeInfo_div {
+    background-color: rgb(61, 67, 111);
+    margin: 0 auto;
+    margin-top: 50px;
+    color: rgb(236, 236, 119);
+    text-align: center;
+}
+.pokeInfo_text {
+    padding: 10px;
+}
+.pokeInfo_wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .pokeInfo_wrapper {
+        display: block;
+    }
+}
+@media screen and (max-width: 568px) {
+    .pokeInfo_wrapper {
+        display: block;
+    }
+}
+.pokeInfo_img_wrapper {
+    height: 500px;
+    width: 500px;
+  }
+  @media screen and (max-width: 1200px) and (min-width: 569px) {
+      .pokeInfo_img_wrapper {
+          margin: 0 auto;
+      }
+  }
+  @media screen and (max-width: 568px) {
+      .pokeInfo_img_wrapper {
+          margin: 0 auto;
+          height: 300px;
+          width: 300px;
+      }
+  }
+.pokeInfo_img {
+    max-height:  450px;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+}
+.pokemon_abilities_text {
+    background-color: rgb(236, 134, 119);
+    color: rgb(77, 87, 225);
+    padding: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .pokemon_abilities_text {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .pokemon_abilities_text {
+        margin: 0 auto;
+    }
+}
+.base-stat{
+    padding: 10px;
+}
+.base-stat_text{
+    text-transform: uppercase;
+    padding: 10px;
+}

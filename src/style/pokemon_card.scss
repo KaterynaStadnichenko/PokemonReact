@@ -1,0 +1,54 @@
+.poke_grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .poke_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .poke_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 20px;
+        max-width: 334px;
+        width: 100%;
+    }
+}
+.poke_card {
+    background-color: rgb(77, 87, 225, 0.75);
+    width: 115px;
+    height: 115px;
+    border-radius: 15px;
+    color: rgb(236, 236, 119);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(55, 62, 158, 0.90);
+    }
+}
+.poke_number{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.poke_img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding-left: 22px;
+}
+
+.poke_name {
+    display: flex;
+    justify-content: center;
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Input from "../Input/Input";
 import axios from "axios";
 import PokemonInfo from "../pokemoninfo/pokemoninfo";
+import "../../style/search_by_number.scss"
 
 
 export default function SearchByNumber() {

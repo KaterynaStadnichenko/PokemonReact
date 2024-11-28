@@ -1,0 +1,102 @@
+.home_page_wrapper {
+    background-image: url("./pikachu_background.webp");
+    background-size: 100%; 
+    background-position: top;
+    background-repeat: no-repeat; 
+    background-color: rgba(224, 191, 62, 1);
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_wrapper {
+        background-image: url('./pikachu_background_tablet.webp');
+        background-position: center;
+        background-color: rgba(247, 192, 39, 1);
+        padding-bottom: 100px;
+    }
+ }
+ @media screen and (max-width: 568px) {
+    .home_page_wrapper {
+        background-image: url('./pikachu_background_mobile.jpg');
+        background-position: center;
+        background-color: rgba(251, 228, 0, 1);
+    }
+ }
+ .home_page_content {
+    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-left: 15px;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_content {
+        padding-top: 0;
+    }
+}
+ @media screen and (max-width: 568px) {
+    .home_page_content {
+        padding-top: 30px;
+    }
+ }
+ .home_page_text_wrapper {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_text_wrapper {
+        padding-bottom: 800px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+.home_page_text_wrapper {
+    padding-top: 10px;
+}
+}
+.home_page_text {
+    padding-bottom: 300px;
+    font-weight: 800;
+    max-width: 300px;
+    width: 100%;
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_text {
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+ }
+ @media screen and (max-width: 568px) {
+    .home_page_text {
+        padding-top: 20px;
+    }
+ }
+ .home_page_p{
+    color: rgb(8, 71, 173);
+}
+.home_page_nav_buttons {
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_nav_buttons {
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+ }
+ @media screen and (max-width: 568px) {
+    .home_page_nav_buttons {
+        max-width: 300px; 
+        margin: 0 auto;
+    }
+ }
+ .home_page_button {
+    padding: 12px;
+    background-color: rgb(77, 115, 175);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(236, 236, 119);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        color: rgb(77, 115, 175);
+        background-color: rgb(236, 236, 119);
+    }
+}

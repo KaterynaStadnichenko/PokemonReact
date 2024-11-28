@@ -1,4 +1,5 @@
 import axios from "axios";
+import "../../style/pokemon_card.scss"
 
 const PokemonCard = ({ pokemon, loading, infoPokemon }) => {
 
@@ -18,7 +19,8 @@ const PokemonCard = ({ pokemon, loading, infoPokemon }) => {
                         return (
                             <div className="poke_card" key={item.name} onClick={() => getPokemon(item.url)}>
                                 <h2 className="poke_number">{item.id}</h2>
-                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`} className="poke_img" alt='pokemon'/>
+                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`} className="poke_img" alt="pokemon"/>
+                                <p className="poke_name">{item.name}</p>
                             </div>
                         )
                     })
