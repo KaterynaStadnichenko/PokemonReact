@@ -310,6 +310,11 @@
         padding-top: 0;
     }
 }
+ @media screen and (max-width: 568px) {
+    .home_page_content {
+        padding-top: 30px;
+    }
+ }
 .home_page_wrapper {
     background-image: url("./pikachu_background.webp");
     background-size: 100%; 
@@ -319,12 +324,15 @@
  }
  @media screen and (max-width: 1200px) and (min-width: 569px) {
     .home_page_wrapper {
-        background-image: none;
+        background-image: url('./pikachu_background_tablet.webp');
+        background-position: center;
     }
  }
  @media screen and (max-width: 568px) {
     .home_page_wrapper {
-        background-image: none;
+        background-image: url('./pikachu_background_mobile.jpg');
+        background-position: center;
+        background-color: rgba(251, 228, 0, 1);
     }
  }
  .home_page_text {
@@ -336,12 +344,12 @@
  @media screen and (max-width: 1200px) and (min-width: 569px) {
     .home_page_text {
         padding-bottom: 100px;
-        padding-top: 100px;
+        padding-top: 50px;
     }
  }
  @media screen and (max-width: 568px) {
     .home_page_text {
-        margin: 0 auto;
+        padding-top: 20px;
     }
  }
  @media screen and (max-width: 1200px) and (min-width: 569px) {
@@ -349,10 +357,21 @@
         padding-top: 40px;
     }
  }
+ @media screen and (max-width: 568px) {
+    .home_page_text_wrapper {
+        padding-top: 10px;
+    }
+ }
  .home_page_nav_buttons {
     display: flex;
     max-width: 400px;
     justify-content: space-between;
+ }
+ @media screen and (max-width: 1200px) and (min-width: 569px) {
+    .home_page_nav_buttons {
+        max-width: 1050px; 
+        
+    }
  }
  @media screen and (max-width: 568px) {
     .home_page_nav_buttons {
